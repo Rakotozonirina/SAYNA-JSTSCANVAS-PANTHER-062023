@@ -1,0 +1,938 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+/*Les Codes couleurs*/
+/*Les Fonts*/
+/*l' ajout des fonts télécharger*/
+@font-face {
+  font-family: Panthera;
+  src: url(../IllustrationLogosAcceuil/Fonts/PantheraRegular-MVZ9J.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: BEYNO;
+  src: url(../IllustrationLogosAcceuil/Fonts/BEYNO.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Wakanda;
+  src: url(../IllustrationLogosAcceuil/Fonts/WakandaForever-Regular.ttf);
+  font-weight: 400;
+}
+/*Les codes en géneral*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #021740;
+}
+
+.hero-panther {
+  width: 100%;
+  height: 550vh;
+  background: url(../IllustrationLogosAcceuil/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+
+.hero-page {
+  position: relative;
+}
+
+/*aside styles*/
+.hero-page .icons {
+  width: 100px;
+  /*height: 400px;*/
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.hero-page .icons .line-one {
+  width: 8px;
+  height: 400px;
+  animation: lineOne 2s ease-in-out;
+  background-color: #9E91B7;
+}
+
+@keyframes lineOne {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+.hero-page .icons .line-two {
+  width: 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: lineTwo 3s ease-in-out;
+  align-items: center;
+}
+
+@keyframes lineTwo {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+.hero-page .icons .line-two .above {
+  height: 280px;
+  width: 8px;
+  background-color: #9E91B7;
+}
+
+.hero-page .icons .line-two .below {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-page .icons .line-two .below img {
+  margin: 0.1em 0;
+}
+
+/*nav styles*/
+nav {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+}
+
+nav .logos {
+  width: 12%;
+  height: inherit;
+  margin: 0 140px;
+  display: flex;
+  place-items: center;
+}
+
+nav .logos img {
+  cursor: pointer;
+}
+nav .logos img:hover {
+  filter: blur(1px);
+}
+
+nav .liens {
+  width: 30%;
+  height: inherit;
+  margin: 0 100px;
+}
+
+nav .liens ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: inherit;
+}
+
+nav .liens ul li:nth-child(1) h2 a {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
+nav .liens ul li h2 a:hover {
+  text-decoration: underline;
+}
+
+nav .liens ul li h2 {
+  font-family: BEYNO;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+nav .liens ul li h2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*Hero styles*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.hero article {
+  padding: 9em 8.5em;
+}
+
+.hero article .super-hero {
+  transition: all 0.3s ease-in-out;
+}
+.hero article .super-hero:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero article .super-hero h1 {
+  color: #9E91B7;
+  font-family: Panthera;
+  font-weight: 400;
+  font-size: 58px;
+}
+
+.hero article .super-hero h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.hero article p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 1.2em 0;
+}
+
+.hero article a {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hero .pic-hero {
+  z-index: 1;
+}
+
+.hero .pic-hero img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/*Slide styles*/
+.slide-hero {
+  width: 100%;
+  height: 19rem;
+  padding-left: 8.5em;
+  position: relative;
+}
+
+.slide-hero button {
+  width: 2.1em;
+  height: 2em;
+  z-index: 99;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: #021740;
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  top: 40%;
+  right: 3%;
+  box-shadow: 0 0 10px #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.slide-hero button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #FFFFFF;
+}
+
+.slide-hero .wakanda-hero {
+  width: 100%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 24% 20% 20% 20% 16%;
+  background-color: #021740;
+}
+
+.slide-hero .wakanda-hero .one {
+  width: 100%;
+  height: inherit;
+}
+
+.slide-hero .wakanda-hero .one img {
+  max-inline-size: 100%;
+  block-size: auto;
+  transform: scale(1.1);
+}
+
+.slide-hero .wakanda-hero .two {
+  width: 100%;
+  height: inherit;
+}
+
+.slide-hero .wakanda-hero .two article {
+  padding-left: 1.5em;
+  padding-top: 2em;
+}
+
+.slide-hero .wakanda-hero .two article h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+}
+
+.slide-hero .wakanda-hero .two article p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 14px;
+  margin: 0.5em 0;
+}
+
+.slide-hero .wakanda-hero .two article a {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+}
+
+.slide-hero .wakanda-hero .three {
+  width: 100%;
+  height: inherit;
+}
+
+.slide-hero .wakanda-hero .three img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.slide-hero .wakanda-hero .four {
+  width: 100%;
+  height: inherit;
+}
+
+.slide-hero .wakanda-hero .four article {
+  padding: 2em 1em;
+}
+
+.slide-hero .wakanda-hero .four article h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+}
+
+.slide-hero .wakanda-hero .four article p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 14px;
+  margin: 0.5em 0;
+}
+
+.slide-hero .wakanda-hero .four article a {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+}
+
+.slide-hero .wakanda-hero .five {
+  width: 100%;
+  height: inherit;
+}
+
+.slide-hero .wakanda-hero .five img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/*Styles Descriptions*/
+.descriptions {
+  width: 100%;
+  height: 350vh;
+  display: flex;
+}
+
+.descriptions .more-desc {
+  display: grid;
+  grid-template-rows: 28rem 28rem 28rem;
+  align-content: space-around;
+}
+
+.descriptions .more-desc .art-one {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-one h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-one p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
+}
+
+.descriptions .more-desc .art-two {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-two h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-two p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
+}
+
+.descriptions .more-desc .art-three {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-three h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-three p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
+}
+
+.descriptions .desc-hero {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.descriptions .desc-hero .prince {
+  display: grid;
+  align-items: center;
+}
+
+.descriptions .desc-hero .prince .desc-prince {
+  position: relative;
+  width: 80%;
+  height: 40rem;
+  background-color: #FFFFFF;
+  border-radius: 38px;
+  box-shadow: 0px 0px 20px #021740;
+  display: flex;
+  align-items: center;
+  margin-top: 16em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .pic-prince {
+  width: 80%;
+  position: absolute;
+  top: -36%;
+  left: 10%;
+}
+
+.descriptions .desc-hero .prince .desc-prince .pic-prince img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince {
+  margin-top: 12em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article h2 {
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  color: #021740;
+  text-align: center;
+  margin: 0.4em 0;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article .contenus-boutons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article .contenus-boutons button {
+  padding: 1em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #3D2DA6;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 0.4em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul {
+  list-style-type: none;
+  padding: 0 3em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li {
+  margin: 0.5em 0;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p {
+  color: #021740;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p span {
+  font-weight: bold;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p .tiny {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.descriptions .desc-hero .prince-panther {
+  display: flex;
+  align-items: center;
+}
+
+.descriptions .desc-hero .prince-panther div {
+  margin-top: 16rem;
+}
+
+/*contact*/
+.back-contact {
+  background: url(../IllustrationLogosAcceuil/Illustration/Pantherhome7.png) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 80px #021740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-contact form {
+  width: 60%;
+  height: 80vh;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-contact form p {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3em;
+  color: #021740;
+}
+
+.back-contact form h1 {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 250%;
+  text-align: center;
+  color: #021740;
+}
+
+.back-contact form .contact {
+  width: 520px;
+  height: 52vh;
+}
+
+.back-contact form .contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-contact form .contact .contact-form input {
+  width: 100%;
+  height: 56px;
+  margin-top: 0.6em;
+  border-radius: 38px;
+  border: 1.5px solid #021740;
+  outline: none;
+  background-color: transparent;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  text-indent: 1em;
+}
+
+.back-contact form .contact .contact-form textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 38px;
+  margin-top: 1.2em;
+  border: 1.5px solid #021740;
+  outline: none;
+  background-color: transparent;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  color: #021740;
+  resize: none;
+  padding: 1em;
+}
+
+.back-contact form .contact .btn {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.back-contact form .contact .btn button {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  margin-top: 1.2em;
+  border: none;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  color: #021740;
+  background-color: #F2CEF2;
+  outline: none;
+  font-weight: bold;
+  transition: box-shadow 3s ease;
+}
+.back-contact form .contact .btn button:hover {
+  box-shadow: 0 0 20px #021740;
+  cursor: pointer;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../IllustrationLogosAcceuil/Logos/back_footer.png) no-repeat center center/cover;
+}
+
+footer .contenus-footer {
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .contenus-cercle {
+  width: 30%;
+  height: 44vh;
+  position: relative;
+  background: url(../IllustrationLogosAcceuil/Logos/footer1.png) no-repeat center center/contain;
+  transition: all 0.3s ease-in-out;
+}
+footer .contenus-footer .contenus-cercle:hover {
+  transform: scale(1.1);
+}
+
+footer .contenus-footer .contenus-cercle img {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+footer .contenus-footer .desc-footer {
+  width: 70%;
+  height: 44vh;
+}
+
+footer .contenus-footer .desc-footer .first {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 32vh;
+}
+
+footer .contenus-footer .desc-footer .first article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .first article h2 {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first article ul {
+  list-style-type: none;
+  margin-right: 2em;
+}
+
+footer .contenus-footer .desc-footer .first article ul li {
+  margin: 0.8em 0;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p {
+  font-size: 16px;
+  font-family: "Cantarell", sans-serif;
+  text-transform: capitalize;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .contenus-footer .desc-footer .first article ul li p a:hover {
+  text-decoration: underline;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div img {
+  margin: 0 0.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds {
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .seconds p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+footer .contenus-footer .desc-footer .seconds #one {
+  margin-left: 4.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds div {
+  width: 0.3em;
+  height: 0.3em;
+  background-color: #F2CEF2;
+  margin: 0 0.2em;
+  border-radius: 50px;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: 28rem;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .logos {
+    margin: 0;
+  }
+  nav .liens {
+    margin: 0;
+  }
+  nav .liens ul {
+    flex-direction: column;
+    height: 12rem;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 130vh;
+  }
+  .hero-panther {
+    height: 1100vh;
+  }
+  .hero article {
+    padding: 6em;
+  }
+  .hero article .super-hero h1 {
+    font-size: 32px;
+  }
+  .hero article .super-hero h2 {
+    font-size: 24px;
+  }
+  .hero article p {
+    font-size: 14px;
+  }
+  .hero article a {
+    font-size: 14px;
+  }
+  .slide-hero {
+    padding-left: 0;
+    height: 100rem;
+  }
+  .slide-hero .wakanda-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-hero .wakanda-hero .one {
+    display: flex;
+    justify-content: center;
+  }
+  .slide-hero .wakanda-hero .one img {
+    transform: scale(1);
+  }
+  .slide-hero .wakanda-hero .two article {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .slide-hero .wakanda-hero .two {
+    padding: 1.5em;
+  }
+  .slide-hero .wakanda-hero .three {
+    padding: 0 1.5em;
+  }
+  .slide-hero .wakanda-hero .four {
+    padding: 1.5em;
+  }
+  .slide-hero .wakanda-hero .four article {
+    padding: 0;
+  }
+  .slide-hero .wakanda-hero .five {
+    padding: 0 1.5em;
+  }
+  .slide-hero button {
+    top: 88%;
+    right: 54%;
+  }
+  .descriptions {
+    flex-direction: column-reverse;
+    height: 600vh;
+  }
+  .descriptions .desc-hero .prince {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptions .desc-hero .prince-panther div {
+    margin: 1.5rem 0;
+  }
+  .descriptions .desc-hero .prince-panther div img {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article {
+    margin-bottom: 4em;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article ul li p {
+    font-size: 14px;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article ul li p span {
+    font-size: 14px;
+  }
+  .descriptions .more-desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .descriptions .more-desc .art-one {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-one p {
+    font-size: 14px;
+  }
+  .descriptions .more-desc .art-two {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-two p {
+    font-size: 14px;
+  }
+  .descriptions .more-desc .art-three {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-three p {
+    font-size: 14px;
+  }
+  .back-contact {
+    background: url(../IllustrationLogosAcceuil/Illustration/Pantherhome7.png) no-repeat center center/contain;
+  }
+  .back-contact form {
+    width: 80%;
+  }
+  .back-contact form p {
+    font-size: 14px;
+  }
+  .back-contact form h1 {
+    font-size: 32px;
+  }
+  .back-contact form .contact {
+    width: 90%;
+  }
+  .back-contact form .contact .contact-form input {
+    font-size: 14px;
+  }
+  .back-contact form .contact .contact-form textarea {
+    font-size: 14px;
+  }
+  .back-contact form .contact .btn button {
+    font-size: 14px;
+  }
+  footer .contenus-footer {
+    width: 80%;
+    flex-direction: column;
+  }
+  footer .contenus-footer .contenus-cercle img {
+    top: 40%;
+    left: 0%;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  footer .contenus-footer .desc-footer {
+    width: 100%;
+  }
+  footer .contenus-footer .desc-footer .first {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .contenus-footer .desc-footer .first article h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first article ul {
+    margin: 0;
+  }
+  footer .contenus-footer .desc-footer .first article ul li p {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons div img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.4em;
+  }
+  footer .contenus-footer .desc-footer .seconds {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .contenus-footer .desc-footer .seconds #one {
+    margin: 0 2em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

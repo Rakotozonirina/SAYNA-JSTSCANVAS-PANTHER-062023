@@ -1,0 +1,89 @@
+Couleurs
+
+1 - #FFFFFF
+
+2 - #F2CEF2
+
+3 - #9E91B7
+
+4 - #DF99F2
+
+5 - #3D2DA6
+
+6 - #07338C
+
+7 - #021740
+
+- Typographies
+
+        -Titre H1
+
+        Font family : Panthera
+
+        Font Weight : Regular
+
+        Font Size : 68px
+
+        -Titre H2
+
+        Font family : BEYNO
+
+        Font Weight : Regular
+
+        Font Size : 32px
+
+        -Titre H2 TEXTE ENIGME
+
+        Font family : Wakanda forever
+
+        Font Weight : Regular
+
+        Font Size : 43px
+
+        -Text
+
+        Font family : Cantarell
+
+        Font Weight : Regular
+
+        *Text : 
+
+            -Font Size : 16px
+
+        *Citation :
+
+            -Font Size : 14px
+
+        *Footer :
+
+            -Font Size : 10px
+
+- Input
+
+    W:520px
+    H:56px
+    Bord arrondi:38
+
+- Bouton
+
+    -Inactif :
+
+        W:174px
+        H:54px
+        Bord arrondi:38
+    
+    -Hover énigme :
+
+        Drop shadow : #F2CEF2
+        Blur : 20
+        X : 0
+        Y : 0
+
+    -Hover form de contact
+
+        Drop shadwo : #021740
+        Blur : 20
+        X : 0
+        Y : 0
+
+

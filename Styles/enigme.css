@@ -1,0 +1,526 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+/*Les Codes couleurs*/
+/*Les Fonts*/
+/*l' ajout des fonts télécharger*/
+@font-face {
+  font-family: Panthera;
+  src: url(../IllustrationLogosEnigme/Fonts/PantheraRegular-MVZ9J.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: BEYNO;
+  src: url(../IllustrationLogosEnigme/Fonts/BEYNO.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Wakanda;
+  src: url(../IllustrationLogosEnigme/Fonts/WakandaForever-Regular.ttf);
+  font-weight: 400;
+}
+/*style base*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+
+/*header styles*/
+header nav {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+}
+
+header nav .logos {
+  width: 12%;
+  height: inherit;
+  margin: 0 140px;
+  display: flex;
+  place-items: center;
+  cursor: pointer;
+}
+header nav .logos:hover {
+  filter: blur(1px);
+}
+
+header nav .liens {
+  width: 30%;
+  height: inherit;
+  margin: 0 100px;
+}
+
+header nav .liens ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: inherit;
+}
+
+header nav .liens ul li:nth-child(3) h2 a {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
+header nav .liens ul li h2 {
+  font-family: BEYNO;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header nav .liens ul li h2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header nav .liens ul li h2 a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: inset 0 0 200px #021740;
+  background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme1.png) no-repeat left center/contain;
+}
+
+.head .desc {
+  width: 46%;
+  height: 80vh;
+}
+
+.head .desc article h1 {
+  font-family: BEYNO;
+  font-size: 58px;
+  font-weight: 400;
+  color: #9E91B7;
+}
+
+.head .desc .circle {
+  width: 100%;
+  height: 46vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme2.png) no-repeat center center/contain;
+}
+
+.head .desc .circle article {
+  width: 70%;
+  height: 26vh;
+}
+
+.head .desc .circle article p {
+  font-family: "Cantarell", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.head .desc .line-picture {
+  width: 100%;
+  height: 10vh;
+  background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme3.png) no-repeat center center/contain;
+}
+
+.more-desc {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  display: grid;
+  align-content: center;
+}
+
+.more-desc .first {
+  width: 80%;
+  height: 20vh;
+  transition: all 0.3s ease-in-out;
+  padding-left: 140px;
+}
+.more-desc .first:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.more-desc .first h2 {
+  font-family: Wakanda;
+  font-size: 43px;
+  color: #9E91B7;
+  font-weight: 400;
+}
+
+.more-desc .second {
+  margin: 2.5em 0;
+  padding-left: 140px;
+  width: 100%;
+  height: 20vh;
+}
+
+.more-desc .second p {
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.more-desc .second p.para-second {
+  margin: 1.5em 0;
+}
+
+.more-desc .second p.para-second span {
+  font-family: Wakanda;
+  text-transform: uppercase;
+}
+
+.more-desc form {
+  width: 100%;
+  height: 40vh;
+  padding-left: 140px;
+}
+
+.more-desc form div {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-desc form div label {
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin: 1.5em 0;
+}
+
+.more-desc form div input[type=text] {
+  width: 100%;
+  height: 56px;
+  border-radius: 38px;
+  background-color: transparent;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  color: #F2CEF2;
+  font-weight: 400;
+  text-indent: 1em;
+  border-color: #F2CEF2;
+  outline: none;
+}
+
+.more-desc form .bouton {
+  width: 520px;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-desc form .bouton button {
+  width: 30%;
+  height: 56px;
+  border-radius: 38px;
+  border: none;
+  outline: none;
+  background-color: #F2CEF2;
+  color: #021740;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.more-desc .circle-pic {
+  width: 46%;
+  height: 50vh;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme2.png) no-repeat center center/contain;
+}
+
+.more-desc .circle-pic article {
+  width: 70%;
+  height: 26vh;
+}
+
+.more-desc .circle-pic article p {
+  font-family: "Cantarell", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.more-desc .circle-pic article .two {
+  margin: 1em 0;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../IllustrationLogosEnigme/Logos/back_footer.png) no-repeat center center/cover;
+}
+
+footer .contenus-footer {
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .contenus-cercle {
+  width: 30%;
+  height: 44vh;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background: url(../IllustrationLogosEnigme/Logos/footer1.png) no-repeat center center/contain;
+}
+footer .contenus-footer .contenus-cercle:hover {
+  transform: scale(1.1);
+}
+
+footer .contenus-footer .contenus-cercle img {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+footer .contenus-footer .desc-footer {
+  width: 70%;
+  height: 44vh;
+}
+
+footer .contenus-footer .desc-footer .first {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 32vh;
+}
+
+footer .contenus-footer .desc-footer .first article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .first article h2 {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first article ul {
+  list-style-type: none;
+  margin-right: 2em;
+}
+
+footer .contenus-footer .desc-footer .first article ul li {
+  margin: 0.8em 0;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p {
+  font-size: 16px;
+  font-family: "Cantarell", sans-serif;
+  text-transform: capitalize;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .contenus-footer .desc-footer .first article ul li p a:hover {
+  text-decoration: underline;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div img {
+  margin: 0 0.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds {
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .seconds p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+footer .contenus-footer .desc-footer .seconds #one {
+  margin-left: 4.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds div {
+  width: 0.3em;
+  height: 0.3em;
+  background-color: #F2CEF2;
+  margin: 0 0.2em;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    height: 28rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .logos {
+    margin: 0;
+  }
+  header nav .liens {
+    margin: 0;
+  }
+  header nav .liens ul {
+    flex-direction: column;
+    height: 12rem;
+  }
+  main {
+    height: 450vh;
+  }
+  .head {
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+  }
+  .head .desc {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+  .head .desc article h1 {
+    font-size: 24px;
+    margin: 1em;
+  }
+  .head .desc .circle article {
+    margin: 0;
+    width: 90%;
+  }
+  .more-desc {
+    width: 100%;
+    height: 300vh;
+  }
+  .more-desc .first {
+    padding: 1em;
+  }
+  .more-desc .first h2 {
+    font-size: 24px;
+  }
+  .more-desc form div {
+    width: 100%;
+  }
+  .more-desc form div label {
+    font-size: 14px;
+  }
+  .more-desc form div input[type=text] {
+    font-size: 14px;
+  }
+  .more-desc form .bouton {
+    width: 100%;
+  }
+  .more-desc form .bouton button {
+    font-size: 14px;
+  }
+  .more-desc .second {
+    padding: 1em;
+    height: 30vh;
+  }
+  .more-desc form {
+    padding: 1em;
+  }
+  .more-desc .circle-pic {
+    position: relative;
+  }
+  .more-desc .second p {
+    font-size: 14px;
+  }
+  .more-desc .circle-pic {
+    width: 100%;
+  }
+  footer .contenus-footer {
+    width: 80%;
+    flex-direction: column;
+  }
+  footer .contenus-footer .desc-footer {
+    width: 100%;
+  }
+  footer .contenus-footer .desc-footer .first {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .contenus-footer .desc-footer .first article h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first article ul {
+    margin: 0;
+  }
+  footer .contenus-footer .desc-footer .first article ul li p {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons div img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.4em;
+  }
+  footer .contenus-footer .desc-footer .seconds {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .contenus-footer .desc-footer .seconds #one {
+    margin: 0 2em;
+  }
+}
+
+/*# sourceMappingURL=enigme.css.map */
