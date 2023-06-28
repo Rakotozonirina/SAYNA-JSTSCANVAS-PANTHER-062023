@@ -46,6 +46,63 @@ $Wakanda: Wakanda;
 html{
     scroll-behavior: smooth;
 }
+#head{
+    position: relative;
+}
+#head .icons{
+    width: 100px;
+    /*height: 400px;*/
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+#head .icons .line-one{
+    width: 8px;
+    height: 400px;
+    animation: lineOne 2s ease-in-out;
+    background-color: $lightViolet;
+}
+@keyframes lineOne {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
+}
+#head .icons .line-two{
+    width: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: lineTwo 3s ease-in-out;
+    align-items: center;
+}
+@keyframes lineTwo {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
+}
+#head .icons .line-two .above{
+    height: 280px;
+    width: 8px;
+    background-color: $lightViolet;
+}
+#head .icons .line-two .below{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#head .icons .line-two .below img{
+    margin: 0.1em 0;
+}
 body{
     background: url(../IllustrationLogosWakanda/Logos/arrière_plan.png) no-repeat center center/cover;
 }
