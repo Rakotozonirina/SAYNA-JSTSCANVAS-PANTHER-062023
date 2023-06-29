@@ -317,16 +317,17 @@ nav .liens ul li h2 a{
     width: 100%;
     height: 350vh;
     display: flex;
+    overflow: hidden;
 }
 .descriptions .more-desc{
     display: grid;
     grid-template-rows: 28rem 28rem 28rem;
-    align-content: space-around;
     
 }
 .descriptions .more-desc .art-one{
     padding-left: 8.5em;
     padding-right: 4em;
+    margin-top: 10rem;
 }
 .descriptions .more-desc .art-one h2{
     color: $lightViolet;
@@ -345,6 +346,7 @@ nav .liens ul li h2 a{
 .descriptions .more-desc .art-two{
     padding-left: 8.5em;
     padding-right: 4em;
+    margin-top: 22rem;
 }
 .descriptions .more-desc .art-two h2{
     color: $lightViolet;
@@ -363,6 +365,7 @@ nav .liens ul li h2 a{
 .descriptions .more-desc .art-three{
     padding-left: 8.5em;
     padding-right: 4em;
+    margin-top: 40rem;
 }
 .descriptions .more-desc .art-three h2{
     color: $lightViolet;
@@ -402,6 +405,11 @@ nav .liens ul li h2 a{
     position: absolute;
     top: -36%;
     left: 10%;
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 .descriptions .desc-hero .prince .desc-prince .pic-prince img{
     max-inline-size: 100%;
@@ -458,12 +466,17 @@ nav .liens ul li h2 a{
 }
 .descriptions .desc-hero .prince-panther div{
     margin-top: 16rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 /*contact*/
 .back-contact{
     background: url(../IllustrationLogosAcceuil/Illustration/Pantherhome7.png) no-repeat center center/cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     box-shadow: 0 0 80px $darkBlue;
     display: flex;
     justify-content: center;
@@ -765,18 +778,21 @@ footer .contenus-footer .desc-footer .seconds div{
     }
     .descriptions .more-desc .art-one{
         padding: 1.5em;
+        margin-top: 0;
     }
     .descriptions .more-desc .art-one p{
         font-size: $FontSizeCitation;
     }
     .descriptions .more-desc .art-two{
         padding: 1.5em;
+        margin-top: 0;
     }
     .descriptions .more-desc .art-two p{
         font-size: $FontSizeCitation;
     }
     .descriptions .more-desc .art-three{
         padding: 1.5em;
+        margin-top: 0;
     }
     .descriptions .more-desc .art-three p{
         font-size: $FontSizeCitation;
