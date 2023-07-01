@@ -88,15 +88,47 @@ function firstShow(){
     const firstSlide = document.querySelector(".wakanda-hero");
     const firstBtn = document.querySelector(".btn-wakanda-hero");
     const secondSlide = document.querySelector(".wakanda-hero-two");
+    const secondBtn = document.querySelector(".btn-wakanda-hero-two");
 
     firstSlide.style.display = "none";
     firstBtn.style.display = "none";
     secondSlide.style.display = "flex";
+    secondBtn.style.display = "block";
     gsap.to(secondSlide, {
         scrollTrigger: ".slide-hero",
         keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
         yoyo: true
     });
 }
+function secondShow(){
+    const secondSlide = document.querySelector(".wakanda-hero-two");
+    const secondBtn = document.querySelector(".btn-wakanda-hero-two");
+    const thirdSlide = document.querySelector(".wakanda-hero-three");
+    const thirdBtn = document.querySelector(".btn-wakanda-hero-three");
 
+    secondSlide.style.display = "none";
+    secondBtn.style.display = "none";
+    thirdSlide.style.display = "flex";
+    thirdBtn.style.display = "block";
+    gsap.to(thirdSlide, {
+        scrollTrigger: ".slide-hero",
+        keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
+        yoyo: true
+    });
+}
+
+function thirdShow(){
+    const thirdSlide = document.querySelector(".wakanda-hero-three");
+    const thirdBtn = document.querySelector(".btn-wakanda-hero-three");
+    const fourSlide = document.querySelector(".wakanda-hero-four");
+
+    thirdSlide.style.display = "none";
+    thirdBtn.style.display = "none";
+    fourSlide.style.display = "flex";
+    gsap.to(fourSlide, {
+        scrollTrigger: ".slide-hero",
+        keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
+        yoyo: true
+    });
+}
 
