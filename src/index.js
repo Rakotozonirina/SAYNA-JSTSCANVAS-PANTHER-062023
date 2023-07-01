@@ -84,6 +84,19 @@ function showSlides(n) {
     slides[result].style.display = "block"; 
 }*/
 
+function defaultSlide(){
+    const firstSlide = document.querySelector(".wakanda-hero");
+    const firstBtn = document.querySelector(".btn-wakanda-hero");
+
+    firstSlide.style.display = "flex";
+    firstBtn.style.display = "block";
+    gsap.to(firstSlide, {
+        scrollTrigger: ".slide-hero",
+        keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
+        yoyo: true
+    });
+}
+
 function firstShow(){
     const firstSlide = document.querySelector(".wakanda-hero");
     const firstBtn = document.querySelector(".btn-wakanda-hero");
@@ -121,10 +134,12 @@ function thirdShow(){
     const thirdSlide = document.querySelector(".wakanda-hero-three");
     const thirdBtn = document.querySelector(".btn-wakanda-hero-three");
     const fourSlide = document.querySelector(".wakanda-hero-four");
+    const fourBtn = document.querySelector(".btn-wakanda-hero-four");
 
     thirdSlide.style.display = "none";
     thirdBtn.style.display = "none";
     fourSlide.style.display = "flex";
+    fourBtn.style.display = "block";
     gsap.to(fourSlide, {
         scrollTrigger: ".slide-hero",
         keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
@@ -132,3 +147,28 @@ function thirdShow(){
     });
 }
 
+function fourShow(){
+    const fourSlide = document.querySelector(".wakanda-hero-four");
+    const fourBtn = document.querySelector(".btn-wakanda-hero-four");
+    const fiveSlide = document.querySelector(".wakanda-hero-five");
+    const fiveBtn = document.querySelector(".btn-wakanda-hero-five");
+
+    fourSlide.style.display = "none";
+    fourBtn.style.display = "none";
+    fiveSlide.style.display = "flex";
+    fiveBtn.style.display = "block";
+    gsap.to(fiveSlide, {
+        scrollTrigger: ".slide-hero",
+        keyframes: [{duration: 1, opacity: 0}, {duration: 1, opacity: 1}],
+        yoyo: true
+    });
+}
+
+function fiveShow() {
+    const fiveSlide = document.querySelector(".wakanda-hero-five");
+    const fiveBtn = document.querySelector(".btn-wakanda-hero-five");
+
+    fiveSlide.style.display = "none";
+    fiveBtn.style.display = "none";
+    defaultSlide();
+}
