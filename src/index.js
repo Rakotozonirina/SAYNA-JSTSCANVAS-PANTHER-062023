@@ -58,32 +58,6 @@ gsap.to(".back-contact > form", {
     yoyo: true,
     delay: 9
 });
-/*Slide*/
-/*
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlides(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let result;
-    let slides = document.getElementById("mySlides");
-    if(n > slides.length){ slideIndex = 1 }
-    if(n < 1){ slideIndex = slideIndex.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    result = slideIndex - 1;
-    slides[result].style.display = "block"; 
-}*/
-
 function defaultSlide(){
     const firstSlide = document.querySelector(".wakanda-hero");
     const firstBtn = document.querySelector(".btn-wakanda-hero");
