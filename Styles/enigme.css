@@ -163,6 +163,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
   box-shadow: inset 0 0 200px #021740;
   background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme1.png) no-repeat left center/contain;
 }
@@ -177,6 +178,7 @@ main {
   font-size: 58px;
   font-weight: 400;
   color: #9E91B7;
+  cursor: pointer;
 }
 
 .head .desc .circle {
@@ -213,47 +215,33 @@ main {
   position: relative;
   display: grid;
   align-content: center;
+  overflow: hidden;
 }
 
 .more-desc .first {
   width: 80%;
   height: 20vh;
-  transition: all 0.3s ease-in-out;
   padding-left: 140px;
-}
-.more-desc .first:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.more-desc .first h2 {
-  font-family: Wakanda;
-  font-size: 43px;
-  color: #9E91B7;
-  font-weight: 400;
 }
 
 .more-desc .second {
   margin: 2.5em 0;
   padding-left: 140px;
+  padding-left: 140px;
   width: 100%;
   height: 20vh;
 }
 
-.more-desc .second p {
-  font-family: "Cantarell", sans-serif;
-  font-size: 16px;
-  color: #FFFFFF;
-  font-weight: 400;
-}
-
-.more-desc .second p.para-second {
-  margin: 1.5em 0;
-}
-
-.more-desc .second p.para-second span {
+.more-desc .second h2 {
   font-family: Wakanda;
-  text-transform: uppercase;
+  font-size: 43px;
+  color: #9E91B7;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.more-desc .second h2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .more-desc form {
@@ -326,20 +314,24 @@ main {
 }
 
 .more-desc .circle-pic article {
-  width: 70%;
+  width: 60%;
   height: 26vh;
 }
 
 .more-desc .circle-pic article p {
   font-family: "Cantarell", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: #FFFFFF;
-  text-align: center;
+  font-weight: 400;
 }
 
-.more-desc .circle-pic article .two {
-  margin: 1em 0;
+.more-desc .circle-pic article p.para-second {
+  margin: 1.5em 0;
+}
+
+.more-desc .circle-pic article p.para-second span {
+  font-family: Wakanda;
+  text-transform: uppercase;
 }
 
 /*footer*/
