@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/enigme.css">
     <script src="../gsap-public/minified/gsap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Enigme</title>
 </head>
 <body>
@@ -68,7 +69,8 @@
         </section>
         <section class="more-desc">
             <article class="first">
-                
+                <h2>ENIGME NUMERO 1</h2>
+                <p>Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, <br> et apprend par la même occasion la première valeur d’une Dora Milaje </p>
             </article>
             <article class="second">
                 <h2>“ SI JE SUIS FIDELE C’EST <br> A CE TRONE PEU IMPORTE QUI <br> MONTE DESSUS”</h2>
@@ -79,7 +81,7 @@
                     <input type="text" id="respond" placeholder="Réponse">
                 </div>
                 <div class="bouton">
-                    <button type="submit">envoyer</button>
+                    <button type="button" onclick="FirstRespond()">envoyer</button>
                 </div>
             </form>
             <section class="circle-pic">
@@ -92,6 +94,12 @@
                     </p>
                 </article>
             </section>
+            <section id="outputFirst">
+                
+            </section>
+            <div id="customFirst">
+
+            </div>
         </section>
     </main>
     <footer>

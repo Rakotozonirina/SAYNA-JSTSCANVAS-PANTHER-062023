@@ -215,6 +215,20 @@ main{
     height: 20vh;
     padding-left: 140px;
 }
+.more-desc .first h2{
+    font-family: $Beyno;
+    font-size: $FontSizeTitreH2Responsive;
+    font-weight: $Regular;
+    color: $lightViolet;
+    text-decoration: underline;
+}
+.more-desc .first p{
+    font-family: $Cantarell;
+    font-size: $FontSizeCitation;
+    color: $white;
+    font-weight: $Regular;
+    margin: 1em 0;
+}
 .more-desc .second{
     margin: 2.5em 0;
     padding-left: 140px;
@@ -283,6 +297,10 @@ main{
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    transition: transform 0.5s;
+    &:hover{
+        box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.15),8px 8px 10px 0px rgba(255,255,255,0.7);
+    }
 }
 .more-desc .circle-pic{
     width: 46%;
@@ -293,6 +311,7 @@ main{
     display: grid;
     align-items: center;
     justify-items: center;
+    z-index: 1;
     background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme2.png) no-repeat center center/contain;
 }
 .more-desc .circle-pic article{
@@ -311,6 +330,29 @@ main{
 .more-desc .circle-pic article p.para-second span{
     font-family: $Wakanda;
     text-transform: uppercase;
+}
+#outputFirst{
+    width: 50%;
+    height: 65vh;
+    z-index: 2;
+    top: 20%;
+    left: 25%;
+    position: absolute;
+    background-color: $lightBlue;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    display: none;
+}
+#customFirst{
+    position: absolute;
+    width: 30%;
+    height: 50vh;
+    z-index: 3;
+    top: 26%;
+    left: 34%;
+    border-radius: 28px;
+    background: linear-gradient(to bottom, $lightViolet, $lightBlue);
+    display: none;
 }
 /*footer*/
 footer{
