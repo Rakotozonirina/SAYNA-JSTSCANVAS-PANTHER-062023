@@ -365,7 +365,7 @@ main {
   background-color: #07338C;
   -webkit-filter: blur(10px);
   filter: blur(10px);
-  display: none;
+  visibility: hidden;
 }
 
 #customFirst {
@@ -377,7 +377,46 @@ main {
   left: 34%;
   border-radius: 28px;
   background: linear-gradient(to bottom, #9E91B7, #07338C);
-  display: none;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#customFirst .firstPopUpH2 {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#customFirst .firstPopUpText {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0.8em 0;
+}
+
+#customFirst .firstPopUpBouton {
+  width: 60%;
+  height: 56px;
+  border-radius: 38px;
+  border: none;
+  outline: none;
+  background-color: #F2CEF2;
+  color: #021740;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+#customFirst .firstPopUpBouton:hover {
+  box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.15), 8px 8px 10px 0px rgba(255, 255, 255, 0.7);
 }
 
 /*footer*/
